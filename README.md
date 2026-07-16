@@ -6,8 +6,8 @@ This repository contains three responsive, accessible browser demos built with s
 
 ## Project Links
 
-- **Repository:** [github.com/Asad2512-dev/javascript-fundamentals](https://github.com/Asad2512-dev/javascript-fundamentals) (available after the repository is created and this project is pushed)
-- **Live demo:** `https://asad2512-dev.github.io/javascript-fundamentals/` (available after GitHub Pages is enabled from the repository's `main` branch)
+- **Repository:** [github.com/Asad2512-dev/Js-fundamentals](https://github.com/Asad2512-dev/Js-fundamentals)
+- **Live demo:** GitHub Pages is not enabled. Enable Pages from the `main` branch to publish at `https://asad2512-dev.github.io/Js-fundamentals/`.
 
 ## Screenshots
 
@@ -30,7 +30,7 @@ This repository contains three responsive, accessible browser demos built with s
 ## Folder Structure
 
 ```text
-javascript-fundamentals/
+Js-fundamentals/
 ├── README.md
 ├── TESTING.md
 ├── index.html
@@ -200,7 +200,6 @@ The complete results are recorded in [TESTING.md](TESTING.md). Automated browser
 
 - Add optional quiz categories and randomized question order.
 - Add task due dates while keeping the current simple workflow.
-- Publish the repository through GitHub Pages.
 
 ## Author
 
