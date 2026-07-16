@@ -1,0 +1,114 @@
+.container {
+  max-width: 980px;
+}
+
+.developer-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.ghost-button,
+.answer-button {
+  border-color: #aeb9ca;
+  background: var(--surface);
+  box-shadow: none;
+  color: var(--ink);
+}
+
+.ghost-button {
+  color: var(--primary);
+}
+
+.ghost-button:hover:not(:disabled),
+.answer-button:hover:not(:disabled) {
+  border-color: #8492a8;
+  background: #eef2f7;
+}
+
+.status {
+  min-height: 3.25rem;
+  margin-block: 24px;
+  padding-block: 12px;
+  border-block: 1px solid var(--line);
+  font-weight: 700;
+}
+
+.question-card > p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.progress {
+  width: 100%;
+  height: 8px;
+  margin-block: 16px;
+  appearance: none;
+  border: 0;
+  border-radius: 4px;
+  background: #dce2ec;
+}
+
+.progress::-webkit-progress-bar {
+  border-radius: 4px;
+  background: #dce2ec;
+}
+
+.progress::-webkit-progress-value {
+  border-radius: 4px;
+  background: var(--primary);
+  transition: width 240ms ease;
+}
+
+.progress::-moz-progress-bar {
+  border-radius: 4px;
+  background: var(--primary);
+}
+
+.answers {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.answer-button {
+  width: 100%;
+  text-align: left;
+}
+
+.answer-button:disabled {
+  opacity: 1;
+  transition: none;
+}
+
+.answer-button.is-correct {
+  border-color: var(--success);
+  background: var(--success);
+  color: #ffffff;
+}
+
+.answer-button.is-wrong {
+  border-color: var(--danger);
+  background: var(--danger);
+  color: #ffffff;
+}
+
+.next-button {
+  margin-top: 16px;
+}
+
+.result-card {
+  display: grid;
+  justify-items: start;
+  gap: 14px;
+}
+
+.result-card p {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress::-webkit-progress-value {
+    transition: none;
+  }
+}

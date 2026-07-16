@@ -1,0 +1,89 @@
+.app-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 18px;
+}
+
+.counter-display {
+  margin-block: 24px;
+  padding-block: 24px;
+  border-block: 1px solid var(--line);
+  text-align: center;
+}
+
+#counterValue {
+  display: block;
+  color: var(--primary);
+  font-size: clamp(3.25rem, 12vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+#counterStatus {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.step-form {
+  display: grid;
+  gap: 8px;
+}
+
+.step-form label {
+  font-weight: 700;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.feedback {
+  min-height: 1.5em;
+  margin: 0;
+}
+
+.secondary {
+  border-color: #aeb9ca;
+  background: var(--surface);
+  box-shadow: none;
+  color: var(--ink);
+}
+
+.secondary:hover:not(:disabled) {
+  border-color: #8492a8;
+  background: #eef2f7;
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.history-panel {
+  align-self: start;
+}
+
+.history-list {
+  margin: 18px 0 0;
+  padding-left: 22px;
+}
+
+.history-list li {
+  border-bottom: 1px solid var(--line);
+  padding-block: 10px;
+}
+
+@media (max-width: 760px) {
+  .app-shell,
+  .button-row {
+    grid-template-columns: 1fr;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+}

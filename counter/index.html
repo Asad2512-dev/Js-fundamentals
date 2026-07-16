@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An accessible closure-based JavaScript counter with custom steps, keyboard controls, and action history.">
+  <title>Counter App | JavaScript Fundamentals</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Counter navigation">
+      <a class="brand" href="../index.html">JS Fundamentals</a>
+      <a class="back-link" href="../index.html">Back to demos</a>
+    </nav>
+  </header>
+
+  <main class="container app-shell">
+    <section class="panel" aria-labelledby="counter-title">
+      <div class="panel-heading">
+        <p class="eyebrow">Demo 01</p>
+        <h1 id="counter-title">Counter App</h1>
+        <p>Use the buttons or keyboard shortcuts: Arrow Up to increment, Arrow Down to decrement, and R to reset.</p>
+      </div>
+
+      <div class="counter-display" aria-live="polite">
+        <span id="counterValue">0</span>
+        <p id="counterStatus">The counter is zero.</p>
+      </div>
+
+      <form class="step-form" id="stepForm" novalidate>
+        <label for="stepInput">Step size</label>
+        <div class="input-row">
+          <input id="stepInput" name="stepInput" type="number" min="1" max="100" step="1" value="1" inputmode="numeric" aria-describedby="stepFeedback">
+          <button type="submit">Apply step</button>
+        </div>
+        <p class="feedback" id="stepFeedback" aria-live="assertive">Step size is 1.</p>
+      </form>
+
+      <div class="button-row" aria-label="Counter controls">
+        <button id="decrementButton" type="button">Decrement</button>
+        <button id="resetButton" type="button" class="secondary">Reset</button>
+        <button id="incrementButton" type="button">Increment</button>
+      </div>
+    </section>
+
+    <aside class="panel history-panel" aria-labelledby="history-title">
+      <h2 id="history-title">Recent actions</h2>
+      <ol id="historyList" class="history-list" aria-live="polite"></ol>
+      <p id="emptyHistory" class="empty-state">No counter actions yet.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Closure, scope, hoisting, DOM manipulation, and keyboard events are demonstrated in <code>counter/script.js</code>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

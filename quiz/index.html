@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An accessible asynchronous JavaScript quiz demonstrating Promises, async/await, errors, retry, and scoring.">
+  <title>Async Quiz App | JavaScript Fundamentals</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Quiz navigation">
+      <a class="brand" href="../index.html">JS Fundamentals</a>
+      <a class="back-link" href="../index.html">Back to demos</a>
+    </nav>
+  </header>
+
+  <main class="container app-shell">
+    <section class="panel" aria-labelledby="quiz-title">
+      <div class="panel-heading">
+        <p class="eyebrow">Demo 03</p>
+        <h1 id="quiz-title">Async Quiz App</h1>
+        <p>Questions load through a simulated Promise-based API, then render one at a time.</p>
+      </div>
+
+      <div class="developer-actions" aria-label="Quiz developer test controls">
+        <button id="simulateErrorButton" type="button" class="ghost-button">Simulate Error</button>
+      </div>
+
+      <div id="quizStatus" class="status" aria-live="polite"></div>
+      <div id="quizMount" aria-live="off"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Promises, async/await, try/catch, score tracking, and error recovery are demonstrated in <code>quiz/script.js</code>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An accessible vanilla JavaScript to-do list with editing, filters, validation, and localStorage persistence.">
+  <title>To-Do List | JavaScript Fundamentals</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="To-do navigation">
+      <a class="brand" href="../index.html">JS Fundamentals</a>
+      <a class="back-link" href="../index.html">Back to demos</a>
+    </nav>
+  </header>
+
+  <main class="container app-shell">
+    <section class="panel" aria-labelledby="todo-title">
+      <div class="panel-heading">
+        <p class="eyebrow">Demo 02</p>
+        <h1 id="todo-title">To-Do List</h1>
+        <p>Tasks are stored as objects in an array, rendered to the DOM, and saved in localStorage.</p>
+      </div>
+
+      <form id="taskForm" class="task-form" novalidate>
+        <label for="taskInput">Task name</label>
+        <div class="input-row">
+          <input id="taskInput" name="taskInput" type="text" maxlength="80" autocomplete="off" placeholder="Add a focused task" aria-describedby="formFeedback">
+          <button type="submit">Add task</button>
+        </div>
+        <p id="formFeedback" class="feedback" aria-live="assertive"></p>
+      </form>
+
+      <div class="toolbar" aria-label="Task filters">
+        <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-button" data-filter="active" aria-pressed="false">Active</button>
+        <button type="button" class="filter-button" data-filter="completed" aria-pressed="false">Completed</button>
+      </div>
+
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+      <p id="emptyState" class="empty-state">No tasks yet. Add one above to begin.</p>
+    </section>
+
+    <aside class="panel summary-panel" aria-labelledby="summary-title">
+      <h2 id="summary-title">Summary</h2>
+      <p id="taskCount">0 active tasks</p>
+      <button id="clearCompletedButton" type="button" class="danger">Clear completed</button>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Arrays, objects, callbacks, localStorage, validation, and DOM rendering are demonstrated in <code>todo-list/script.js</code>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
