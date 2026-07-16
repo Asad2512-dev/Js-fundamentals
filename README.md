@@ -6,8 +6,8 @@ This repository contains three responsive, accessible browser demos built with s
 
 ## Project Links
 
-- **Repository:** [github.com/Asad2512-dev/Js-fundamentals](https://github.com/Asad2512-dev/Js-fundamentals)
-- **Live demo:** Not published yet. Enable GitHub Pages from the repository's `main` branch after pushing the project.
+- **Repository:** [github.com/Asad2512-dev/javascript-fundamentals](https://github.com/Asad2512-dev/javascript-fundamentals) (available after the repository is created and this project is pushed)
+- **Live demo:** `https://asad2512-dev.github.io/javascript-fundamentals/` (available after GitHub Pages is enabled from the repository's `main` branch)
 
 ## Screenshots
 
